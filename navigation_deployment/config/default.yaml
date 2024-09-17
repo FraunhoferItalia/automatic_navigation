@@ -1,0 +1,33 @@
+automatic_navigation:
+  configurators_info:
+    package: "navigation_configurators"
+    file: "config/default.yaml"
+  vehicle:
+    root_frame: ""
+#   wheel_radius: 0.0
+    chosen_kinematic:
+      type: ""
+      name: ""
+    possible_kinematics: {}
+  tools:
+    filtering:
+      tool: robot_localization
+      config_file: robot_localization.yaml
+    control:
+      tool: omnidirectional_controller/OmnidirectionalController
+      config_file: controllers.yaml
+    localization:
+      tool: neo_localization2
+      config_file: neo_localization2.yaml
+    planning:
+      tool: neo_nav2
+      config_file: neo_nav2.yaml
+    mapping:
+      tool: slam_toolbox
+      config_file: slam_toolbox.yaml
+    visualization:
+      tool: rviz2
+      config_file: rviz2.rviz
+    simulation:
+      tool: gazebo
+      config_file: ""

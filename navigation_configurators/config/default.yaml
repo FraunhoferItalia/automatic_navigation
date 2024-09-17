@@ -1,0 +1,20 @@
+navigation_configurators:
+  namespace: ""
+  control_frame: control_frame
+  odom_frame: odom
+  odom_topic: odom
+  map_frame: map
+  controller_cmd_vel_topic: cmd_vel
+  planning_cmd_vel_topic: cmd_vel
+  footprint_topic: footprint
+  footprint_stamped_topic: footprint_stamped
+  footprint_padding: 0.0
+  initialpose_topic: initialpose
+  path_topic: plan_frame
+  plan_topic: navigate_frame
+  goal_pose_topic: goal_frame
+
+  ## WITHOUT DEFAULT:
+  # laserscan_topic:
+  # pointcloud_topic:
+  # plan_frame:
